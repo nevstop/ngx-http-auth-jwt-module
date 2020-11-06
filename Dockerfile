@@ -99,6 +99,8 @@ RUN cp -r /usr/share/nginx/html /usr/share/nginx/secure-rs256
 RUN cp -r /usr/share/nginx/html /usr/share/nginx/secure-auth-header
 RUN cp -r /usr/share/nginx/html /usr/share/nginx/secure-no-redirect
 
+VOLUME /etc/nginx/
+
 ENTRYPOINT ["/usr/sbin/nginx"]
 
-EXPOSE 8000
+EXPOSE 8011
